@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   get '/northamerica' do
-    
+
 
     erb :northamerica
   end

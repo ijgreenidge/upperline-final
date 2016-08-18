@@ -510,3 +510,7 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+#blue-background{
+  background-color:#18BC9C;
+}
