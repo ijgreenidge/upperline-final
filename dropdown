@@ -1,0 +1,12 @@
+<div class="form-group">
+ <label for="exampleSelect1">Your region</label>
+   <select class="form-control" id="exampleSelect1">
+    <option>Northern America</option>
+    <option>Latin America and Caribbean</option>
+    <option>Europe</option>
+    <option>Northern Africa and Middle East</option>
+    <option>Sub-Saharan Africa</option>
+    <option>East Asia-Pacific</option>
+    <option>South Asia</option>
+   </select>
+</div>
