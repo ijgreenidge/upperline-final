@@ -6,7 +6,9 @@
 
 
 
-
+#graph2{
+  float:left;
+}
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
