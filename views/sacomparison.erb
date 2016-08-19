@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Future</title>
+     <link rel="stylesheet" href="freelancer.css" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/pages.css" rel="stylesheet"/>
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <body id="page-top" class="index">
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/South_America_(orthographic_projection).svg/541px-South_America_(orthographic_projection).svg.png" width="260" class="img-responsive img-centered" alt="">
+                    <div class="intro-text">
+                        <span class="name">South America</span>
+                        <hr class="star-light">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+      <div class="container">
+        <div class="row">
+          <center>
+          <h1>Actual Estimates</h1>
+            <br>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h1><br>Life Expectancy</h1>
+        <h2><%@southamerica_hash["LifeExp"].each do |year, age|%>
+      <%="In the year #{year}, the average life expectancy will be #{age}."%>
+          <br>
+         <%end%>
+        </h2>
+          </div>
+            <div class="col-md-4">
+              <h1>Population Growth</h1>
+            <h2><%@southamerica_hash["PopGrowth"].each do |annual, percentage|%>
+            <%="In #{annual}, the annual population growth will be #{percentage}."%>
+                <br>
+              <%end%>
+            </h2>
+        </div>
+          <div class="col-md-4">
+
+            <h1>Population Total</h1>
+          <h2><%@southamerica_hash["PopTotal"].each do |decade, total|%>
+          <%="The Population of North America will be #{total} in the year #{decade}."%>
+              <br>
+          <%end%>
+          </h2>
+          </div>
+      </div>
+        <div class="row">
+          <center>
+          <h1>Your Guess<h1>
+            <br>
+        </div>
+      </div>
+
+
+    </body>
