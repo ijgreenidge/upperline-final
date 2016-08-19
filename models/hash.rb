@@ -91,7 +91,7 @@ def compare_guesses(guess, continent, category, year)
  }
   stats[continent][category][year].to_f - guess
   if ((stats[continent][category][year].to_f - guess).abs)/stats[continent][category][year].to_f < 0.2
-    return "Nice guess! You were within #{((((stats[continent][category][year].to_f - guess).abs)/stats[continent][category][year].to_f)*100).round(2)} % of the actual projection."
+    return "Nice guess! You were within #{((stats[continent][category][year].to_f - guess).abs)} of the actual projection."
   else
     return "Nice try. You were off by #{((stats[continent][category][year].to_f - guess).abs)}."
   end
